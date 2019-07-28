@@ -1,5 +1,6 @@
-
-
+body {
+	background-image: url("../../assets/images/giphy.png"); 
+}
 label {
 	font-size: 35px;
 }
