@@ -4,7 +4,7 @@ var topics = [];
 
 	//Function with AJAX call to GIPHY; Q parameterc for API link set to search term, limit 10 results
   //Create div with respective still and animate image sources with "data-state", "data-still" and "data-animate" attributes
- 	function displayGlobelNetwork() {
+ 	function displayamozonPrime() {
 
 	var x = $(this).data("search");
 	console.log(x);
@@ -26,16 +26,16 @@ var topics = [];
         	var rating = results[i].rating;
         	var defaultAnimatedSrc = results[i].images.fixed_height.url;
         	var staticSrc = results[i].images.fixed_height_still.url;
-        	var networkImage = $("<img>");
+        	var showImage = $("<img>");
         	var p = $("<p>").text("Rating: " + rating);
 
-        	networkImage.attr("src", staticSrc);
-        	networkImage.addClass("globelNetwork");
-        	networkImage.attr("data-state", "still");
-        	networkImage.attr("data-still", staticSrc);
-        	networkImage.attr("data-animate", defaultAnimatedSrc);
+        	showImage.attr("src", staticSrc);
+        	showImage.addClass("amozonPrimeGiphy");
+        	showImage.attr("data-state", "still");
+        	showImage.attr("data-still", staticSrc);
+        	showImage.attr("data-animate", defaultAnimatedSrc);
         	showDiv.append(p);
-        	showDiv.append(networkImage);
+        	showDiv.append(showImage);
         	$("#gifArea").prepend(showDiv);
 
         }
@@ -45,10 +45,10 @@ var topics = [];
   //Submit button click event takes search term from form input, trims and pushes to topics array, displays button
 	$("#addShow").on("click", function(event) {
         event.preventDefault();
-        var newShow = $("#globelNetwork").val().trim();
+        var newShow = $("#amozonPrimeInput").val().trim();
         topics.push(newShow);
         console.log(topics);
-        $("#globelNetwork").val('');
+        $("#amozonPrimeInput").val('');
         displayButtons();
       });
 
@@ -67,11 +67,11 @@ var topics = [];
 
   displayButtons();
 
-  //Click event on button with id of "show" executes displayGlobelNetwork function
-  $(document).on("click", "#show", displayGlobelNetwork);
+  //Click event on button with id of "show" executes displayAmozonPrime function
+  $(document).on("click", "#show", displayamozonPrime);
 
-  //Click event on gifs with class of "globelNetwork" executes pausePlayGifs function
-  $(document).on("click", ".globelNetwork", pausePlayGifs);
+  //Click event on gifs with class of "AmozonPrime" executes pausePlayGifs function
+  $(document).on("click", ".amozonPrime", pausePlayGifs);
 
   //Function accesses "data-state" attribute and depending on status, changes image source to "data-animate" or "data-still"
   function pausePlayGifs() {
