@@ -26,16 +26,16 @@ var topics = [];
         	var rating = results[i].rating;
         	var defaultAnimatedSrc = results[i].images.fixed_height.url;
         	var staticSrc = results[i].images.fixed_height_still.url;
-        	var showImage = $("<img>");
+        	var networkImage = $("<img>");
         	var p = $("<p>").text("Rating: " + rating);
 
-        	showImage.attr("src", staticSrc);
-        	showImage.addClass("globelNetwork");
-        	showImage.attr("data-state", "still");
-        	showImage.attr("data-still", staticSrc);
-        	showImage.attr("data-animate", defaultAnimatedSrc);
+        	networkImage.attr("src", staticSrc);
+        	networkImage.addClass("globelNetwork");
+        	networkImage.attr("data-state", "still");
+        	networkImage.attr("data-still", staticSrc);
+        	networkImage.attr("data-animate", defaultAnimatedSrc);
         	showDiv.append(p);
-        	showDiv.append(showImage);
+        	showDiv.append(networkImage);
         	$("#gifArea").prepend(showDiv);
 
         }
