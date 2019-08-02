@@ -1,55 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>AJAX Giphy Button Review</title>
+	<title>AJAX Giphy Button</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 </head>
-<body id="wholeThing">
-
-<!-- <div class="jumbotron" id="header">
-  <img id="topImageL" src="assets/images/giphy-left.gif">
-  <img id="topImageR" src="assets/images/giphy-right.gif">
-  <h1>For the Love of Netflix</h1>
-  <h4>Click the buttons to display GIPHYs of your favorite Netflix shows<br>Click the GIPHYs to pause and play<br>Search to add more buttons!</h4>
-</div> -->
-
-<form class="form-inline" id="amozonPrime">
-  <div class="form-group">
-      <h1>
-    <label for="amozonPrimeInput">AmozonPrime</label></h1>
-    <input type="text" id="amozonPrimeInput">
-  </div>
+<body>
+    <div class="container">
+        <div class="jumbotron text-center bg-success text-white">
+          <h1>World Biggest Netflix Giphy</h1>
+        </div>
+<h1>
+<form class="form-inline" id="netflixSearch">
+  <h3>
+    <input type="text" id="netflixInput">
+  
   <!-- Button triggers show to be added -->
-  <input id="addShow" type="submit" value="submit">
+  
+  <input id="addShow" type="submit" value="submit"></h3>
+</h3>
+</div>
 </form>
 
 <div class="row">
   <div class="container">
     <div class="btn-group inline pull-left">
-      <button class="btn btn-primary" id="show" data-search="Stranger Things">Stranger Things</button>
-      <button class="btn btn-primary" id="show" data-search="Narcos">Narcos</button>
-      <button class="btn btn-primary" id="show" data-search="Luke Cage">Luke Cage</button>
-      <button class="btn btn-primary" id="show" data-search="Jessica Jones">Jessica Jones</button>
-
+      <button class="btn btn-primary" id="show" data-search="Stranger">Stranger</button>
+      <button class="btn btn-primary" id="show" data-search="moon">moon</button>
+      <button class="btn btn-primary" id="show" data-search="cartoons">cartoons</button>
+      <button class="btn btn-primary" id="show" data-search="stars">stars</button>
       <div id="myButtons"></div>
     </div> <!--end of button group -->
   </div> <!--end of container -->
 </div> <!--end of row -->
-
-
 <div class="row">
   <div class="container">
       <span><div id="gifArea"></div></span>
   </div> <!--end of container -->
 </div> <!-- end of row  -->
-
-
-<script type="text/javascript" src="assets/javascript/app.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
 </body>
 </html>
