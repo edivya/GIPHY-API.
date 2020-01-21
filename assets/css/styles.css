@@ -13,8 +13,9 @@ label {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
-.jumbotron {
-	background-color: #8c149c;
+.jumbotron h1 {
+	background-color: #8d5168;
+	color:  #98ecad;
 	/* Find light color of success panel */
 }
 #addShow{
