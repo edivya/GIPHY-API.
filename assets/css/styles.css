@@ -1,25 +1,23 @@
 body {
-	
-	background-image: url("../../assets/images/giphy.png");
-}
-label {
-	font-size: 35px;
-	
+  font-family: "Roboto", sans-serif;
 }
 
-#show {
-	margin-right: 5px;
-	margin-left: 5px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-.jumbotron h1 {
-	background-color: #8d5168;
-	color:  #98ecad;
-	/* Find light color of success panel */
-}
-#addShow{
-	text-align: center;
+.item {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  padding: 0px 10px 0px 10px;
 }
 
+#results-div {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
 
+#header-image {
+  float: right;
+}
