@@ -6,9 +6,10 @@
 <p>https://edivya.github.io/GIPHY-API./</p>
 
 ## Screenshots
-(https://github.com/edivya/GIPHY-API./blob/master/assets/images/1.png)
-(https://github.com/edivya/GIPHY-API./blob/master/assets/images/2.png)
-(https://github.com/edivya/GIPHY-API./blob/master/assets/images/3.png)
+![1](https://github.com/edivya/GIPHY-API./blob/master/assets/images/1.png)
+![2](https://github.com/edivya/GIPHY-API./blob/master/assets/images/2.png)
+![3](https://github.com/edivya/GIPHY-API./blob/master/assets/images/3.png)
+
 
 ## Technologies used to create site
 
