@@ -13,9 +13,9 @@ var topics = [
   "giannis antetokounmpo"
 ];
 //Create a variable for the button that the user can create and then click to display gifs from the GIPHY API.
-var athleteBtn;
+var gameBtn;
 //Create variable for gif image.
-var athleteImage;
+var gameImage;
 
 function createButtons() {
   //Take topics in array and create buttons in the HTML.

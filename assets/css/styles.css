@@ -1,6 +1,9 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+.bg-light {
+  background-color: white;
+}
 
 .item {
   position: relative;
