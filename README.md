@@ -12,3 +12,9 @@
 <li>JQuery</li>
 <li>AJAX</li>
 <li>GIPHY API</li>
+
+
+## How to use the GIPHY API
+<p>To learn about the GIPHY API and the various API parameters, read the <a href="https://developers.giphy.com/docs/" target="_blank">GIPHY API documentation</a>. You should be familiar with the API before contributing to this site or creating your own.</p>
+<p>GIPHY requires developers to use a key to access API data. To use the GIPHY API, you'll need a (free) GIPHY account. Then, you can obtain a key by creating an app.</p>
+<p>Ensure that you switch the protocol in the query URL from http to https, or the app might not work properly when it is deployed.</p>
